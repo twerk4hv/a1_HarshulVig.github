@@ -1,0 +1,28 @@
+.slideshow {
+    position: auto;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    left: 0;
+  }
+  .next{
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    right: 0;
+  }

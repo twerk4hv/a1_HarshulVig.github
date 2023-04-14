@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <link rel="stylesheet" type="text/css" href="WebsiteDOM.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+
+
+    <main>
+      <div class="content">
+        <h1 style="text-align: center; padding-top: 10%;">Hey Y'all</h1>
+        <p style="text-transform: capitalize; text-align: center;"> <br> </p>
+    
+   </div>
+
+
+<div class="container">
+  <p style="text-align:center;">DOM JS Buttons</p>
+  <a href="https://thumbor.forbes.com/thumbor/fit-in/960x/filters:format(jpg)/https://www.forbes.com/wheels/wp-content/uploads/2020/12/Nissan-zproto-400z-960x540-1.png">
+      <button class="btn btn-primary btn-lg;">Picture</button>
+  </a>
+<br0>
+
+</div>
+
+<script>
+  function addParagraph() {
+    var newParagraph = document.createElement('p');
+    var paragraphText = document.createTextNode('This is a new paragraph!');
+    newParagraph.appendChild(paragraphText);
+    document.body.appendChild(newParagraph);
+  }
+  
+</script>
+
+<script>
+
+  function changeText() {
+    var paragraph = document.getElementById("demo");
+    paragraph.innerHTML = "The text has been changed!";
+
+    var newParagraph = document.createElement("p");
+    newParagraph.innerHTML = "This is a new paragraph.";
+    document.body.appendChild(newParagraph);
+  }
+
+  function changeImage() {
+    var image = document.getElementById("myImage");
+    image.src = "https://www.shutterstock.com/image-vector/image-toilet-bowl-cleaning-tools-260nw-97672982.jpg" ;
+  }
+  
+</script>
+
+<br>
+<img id="myImage" src="https://easydrawingguides.com/wp-content/uploads/2021/01/Toilet-Step-10.png " width="300px" height="400px">
+<button onclick="changeImage()">Change image</button>
+
+<p id="demo">This is a paragraph.</p>
+<button onclick="changeText()">Change Text</button>
+
+
+<button onclick="addImage()">Add a Picture</button>
+
+
+<script>
+  function addImage() {
+    var newImage = document.createElement('img');
+    newImage.setAttribute('src', 'https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960');
+    document.body.appendChild(newImage);
+  }
+</script>
+
+
+
+
+    </main>
+    <script src="WebDOM.js"></script>
+  </body>
+</html>
+
+ 
